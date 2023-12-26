@@ -4,5 +4,5 @@
 
 ✨ Aberto a novas oportunidades e desafios na área de segurança da informação! Estou disponível para contato! 🌐✉️
 
- <script src="https://tryhackme.com/badge/1591374"></script>
+ 
  

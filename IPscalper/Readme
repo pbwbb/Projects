@@ -1,1 +1,45 @@
-hehe
+
+    ooOoOOo OooOOo.                      o                    
+       O    O     `O                    O                     
+       o    o      O                    o                     
+       O    O     .o                    O                     
+       o    oOooOO'  .oOo  .oOo  .oOoO' o  .oOo. .oOo. `OoOo. 
+       O    o        `Ooo. O     O   o  O  O   o OooO'  o     
+       O    O            O o     o   O  o  o   O O      O     
+    ooOOoOo o'       `OoO' `OoO' `OoO'o Oo oOoO' `OoO'  o     
+                                           O                  
+                                           o'  by Pedro Webber                
+    
+
+-+-+-+-+-+-+-+-+-+-+
+usage: IPscalper [-h] [-all] [-v] [-geo] [-raw] [-vt] [-abuse] [-otx]
+                 [-showkeys] [-criminalip] [-c2]
+                 IP
+
+NoneA tool for finding open source information about IP addresses All tools
+used on this script are free, although API keys are necessary for some of
+them. To get the keys you only need to create an account. Be mindiful of API
+limits I am not responsible for any misuse of APIs or tools on this script
+
+positional arguments:
+  IP                   IP address that is going to be searched
+
+options:
+  -h, --help           show this help message and exit
+  -all                 Uses all tools
+  -v, --verbose        Verbose output
+  -geo, --location     Uses IP-api to get IP location (no key needed)
+  -raw                 Displays raw json output
+  -vt, --VirusTotal    Uses VirusTotal api for info (key required -> edit
+                       API_keys.txt file or uncomment lines)
+  -abuse, --AbuseIPdb  Uses AbuseIPdb api for info (key required -> edit
+                       API_keys.txt file or uncomment lines)
+  -otx, --AlienVault   Uses OTX AlienVault api for info (key required -> edit
+                       API_keys.txt file or uncomment lines)
+  -showkeys            display API keys
+  -criminalip          Uses CriminalIP api for info (key required -> edit
+                       API_keys.txt file or uncomment lines)
+  -c2, --Feodo         Checks if IP is in Abuse.ch Feodo tracker last 30 days
+                       C2 IoCs (no key needed)
+
+github.com by Pedro Webber

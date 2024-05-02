@@ -4,6 +4,9 @@ import requests
 import argparse
 import json
 
+#pip install requests
+#pip install argparse
+#pip install json
 
 with open('API_keys.txt', 'r') as f:
     lines = f.readlines()
@@ -229,17 +232,17 @@ def main():
             print("AbuseIPdb: ", AbuseIPdb_key)
             print("OTX AlienVault: ", otx_key)
             print("CriminalIP: ", CriminalIP_key)
-        if args.geo == True:
+        if args.location == True:
             ip_api(IP,args)
-        if args.abuse == True:
+        if args.AbuseIPdb == True:
             abuseIP(IP,args,AbuseIPdb_key)
         if args.criminalip ==  True:
             crimninalip(IP,args,CriminalIP_key)
-        if args.vt == True:
+        if args.VirusTotal == True:
             vt(IP,args,VirusTotal_key)
-        if args.otx == True:
+        if args.AlienVault == True:
             otx(IP,args,otx_key)
-        if args.c2 == True:
+        if args.Feodo == True:
             C2(IP,args)
    
 if __name__ == "__main__":

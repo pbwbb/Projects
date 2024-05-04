@@ -1,5 +1,7 @@
+ ## IPscalper
 
-    ooOoOOo OooOOo.                      o                    
+```
+ ooOoOOo OooOOo.                      o                    
        O    O     `O                    O                     
        o    o      O                    o                     
        O    O     .o                    O                     
@@ -9,37 +11,59 @@
     ooOOoOo o'       `OoO' `OoO' `OoO'o Oo oOoO' `OoO'  o     
                                            O                  
                                            o'  by Pedro Webber                
-    
+```
 
--+-+-+-+-+-+-+-+-+-+
+## Description
+
+IPscalper is a tool for gathering open-source information about IP addresses. It integrates various APIs to retrieve data such as geographical location, reputation, and association with known threats.
+
+## Installation
+
+No installation is required. Simply clone the repository and run the script.
+
+## Usage
+
+```
 usage: IPscalper [-h] [-all] [-v] [-geo] [-raw] [-vt] [-abuse] [-otx]
                  [-showkeys] [-criminalip] [-c2]
                  IP
 
-NoneA tool for finding open source information about IP addresses All tools
-used on this script are free, although API keys are necessary for some of
-them. To get the keys you only need to create an account. Be mindiful of API
-limits I am not responsible for any misuse of APIs or tools on this script
+A tool for finding open source information about IP addresses. All tools
+used in this script are free, although API keys are necessary for some of
+them. To obtain the keys, you need to create an account for the respective APIs. Be mindful of API limits. I am not responsible for any misuse of APIs or tools used in this script.
 
 positional arguments:
-  IP                   IP address that is going to be searched
+  IP                   IP address to be searched
 
-options:
+optional arguments:
   -h, --help           show this help message and exit
-  -all                 Uses all tools
-  -v, --verbose        Verbose output
-  -geo, --location     Uses IP-api to get IP location (no key needed)
-  -raw                 Displays raw json output
-  -vt, --VirusTotal    Uses VirusTotal api for info (key required -> edit
+  -all                 Use all available tools
+  -v, --verbose        Enable verbose output
+  -geo, --location     Use IP-api to get IP location (no key needed)
+  -raw                 Display raw JSON output
+  -vt, --VirusTotal    Use VirusTotal API for information (key required -> edit
                        API_keys.txt file or uncomment lines)
-  -abuse, --AbuseIPdb  Uses AbuseIPdb api for info (key required -> edit
+  -abuse, --AbuseIPdb  Use AbuseIPdb API for information (key required -> edit
                        API_keys.txt file or uncomment lines)
-  -otx, --AlienVault   Uses OTX AlienVault api for info (key required -> edit
+  -otx, --AlienVault   Use OTX AlienVault API for information (key required -> edit
                        API_keys.txt file or uncomment lines)
-  -showkeys            display API keys
-  -criminalip          Uses CriminalIP api for info (key required -> edit
+  -showkeys            Display API keys
+  -criminalip          Use CriminalIP API for information (key required -> edit
                        API_keys.txt file or uncomment lines)
-  -c2, --Feodo         Checks if IP is in Abuse.ch Feodo tracker last 30 days
+  -c2, --Feodo         Check if IP is in Abuse.ch Feodo tracker last 30 days
                        C2 IoCs (no key needed)
+```
 
-github.com by Pedro Webber
+## Requirements
+
+- Python 3
+- Internet connection (some features require API access)
+- API keys for certain features (refer to the Usage section)
+
+## Disclaimer
+
+I am not responsible for any misuse of APIs or tools used in this script. Use responsibly and respect API usage limits.
+
+---
+
+[GitHub Repository](https://github.com/pedrowebber/IPscalper) by Pedro Webber

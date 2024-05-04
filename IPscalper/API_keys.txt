@@ -1,4 +1,6 @@
-VirusTotal=
-AbuseIPdb=
-OTX=
-CriminalIP=
+#insert as "Tool:key" do not use "" on the key
+VirusTotal:
+AbuseIPdb:
+OTX:
+CriminalIP:
+GreyNoise:
